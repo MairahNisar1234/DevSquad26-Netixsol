@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    font-size: 24px;
+    font-family:Space Mono;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:  hsl(185, 41%, 84%);
+}
+.card{
+    margin-top:200px;
+    display:flex;
+    background-color: white;
+    border-radius: 10px;
+    max-width:80px;
+    padding:32px;
+    max-width:900px;
+    gap:30px;
+}
+.results-section{
+    background-color: hsl(183, 100%, 15%);
+    flex:1;
+    padding:40px;
+    border-radius:20px;
+}
+.results-section span{
+    color:hsl(189, 47%, 97%);
+}
+#tip-amount, #total-amount{
+    color: hsl(172, 67%, 45%);
+    font-size:50px;
+    font-weight: 700;
+}
+.heading{
+    color:white;
+}
+.input-section{
+    display: flex;
+    flex-direction:column;
+    flex:1;
+    gap:10px;
+    color:hsl(184, 14%, 56%);
+    font-weight:700;
+}
+.input-section input{
+    box-sizing:border-box;
+    margin-top:10px;
+    padding:10px;
+    background-color: hsl(189, 47%, 97%);
+    font-family: Space mono;
+}
+.tip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr)); 
+    gap: 11px; 
+    margin-top: 10px;
+}
+.tip-grid .custom{
+    font-family: Space mono;
+    font-weight:700 ox;
+    color: hsl(183, 100%, 15%);
+}
+
+.tip-grid button{
+    background-color: hsl(183, 100%, 15%);
+    color:white;
+    font-family:Space mono;
+    border-radius: 4px;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    margin-top: 10px;
+    display:flex;
+    font-size:24px;
+    outline:none;
+}
+
+input[type="number"] {
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight:700px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    color: hsl(183, 100%, 15%);
+    outline: none; /* This stops the black box appearing when you click */
+}
+.input-section input{
+    border-radius:6px;
+    background-color: hsl(189, 47%, 97%);
+    font-family: Space mono;
+}
+.result-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    margin-bottom: 40px;    
+}
+
+
+.label-group {
+    display: flex;
+    flex-direction: column;
+
+}
+.results-section span{
+    font-size:20px;
+    color: hsl(185, 41%, 84%);
+}
+#reset {
+    width: 100%;             
+    padding: 10px;           
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%); /* The neon green color */
+    color: hsl(183, 100%, 15%);           /* The dark text color */
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}

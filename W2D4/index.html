@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Tip calculator app</title>
+
+</head>
+<body>
+ <body>
+  <div class="card"> <div class="input-section">
+      <label for="bill">Bill</label>
+      <input type="number" id="bill" placeholder="$">
+
+      <label>Select Tip %</label>
+      <div class="tip-grid">
+        <button id="five" >5%</button>
+        <button id="ten" >10%</button>
+        <button id="fifteen">15%</button>
+        <button id="twenty-five" >25%</button>
+        <button id="fifty">50%</button>
+        <input type="number" id="custom" placeholder="Custom">
+      </div>
+
+      <label for="people">Number of People</label>
+      <input type="number" id="people" placeholder="👤">
+    </div>
+
+    <div class="results-section">
+      <div class="result-row">
+        <div class="label-group">
+          <p class="heading">Tip Amount</p>
+          <span>/ person</span>
+        </div>
+        <span id="tip-amount">$0.00</span>
+      </div>
+
+      <div class="result-row">
+        <div class="label-group">
+          <p class="heading">Total</p>
+          <span>/ person</span>
+        </div>
+        <span id="total-amount">$0.00</span>
+      </div>
+
+      <button id="reset">RESET</button>
+    </div>
+
+  </div> <script src="index.js"></script>
+</body>
+
+
+
+</html>
